@@ -15,7 +15,7 @@ for ch in x:
 #ques-3)Split the user input on comma's and store the values in a list as integers.
 #answer 3
 x=input("enter a string")
-a=x.split(" ")
+a=x.split(",")
 print(a)
 b=[]
 for i in a:
@@ -40,6 +40,12 @@ lst_1[2][0]='NOW'
 lst_1[1]='HAHA'
 print(lst_1)
 print(lst_2)
- in shallow copy, if original object contains any reference to mutual objects, then
- the duplicate reference variables are created pointing to old content object,but no
- duplicate object gets created whereas this is not the case in deep copy .
+
+lst_1=[1,2,[3,4],5]
+lst_2=c.copy(lst_1)
+lst_1[2][0]='NOW'
+lst_1[1]='HAHA'
+print(lst_1)
+print(lst_2)
+
+
